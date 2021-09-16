@@ -51,3 +51,12 @@ defaults:
       path: ""
     values:
       layout: "default"                 # Only required for Petridish website, implied for sites using a theme
+
+# COLLECTIONS
+collections:
+  members:
+    defaults:
+      layout: member
+    output: true
+    permalink: /members/:path/
+  
