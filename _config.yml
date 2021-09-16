@@ -1,9 +1,9 @@
 # SITE SETTINGS
-title: Petridish                        # Title in top navigation bar (navbar) and <head>
-description: Jekyll theme for research project websites # Site description in <head>
-author: Peter Desmet                    # Used for copyright statement in footer
-# url: "https://peterdesmet.github.io"  # No slash at the end
-# baseurl: "/petridish"                 # Only required if your site is on a subdomain e.g. https://username.github.io/sitename
+title: DDE Lab                          # Title in top navigation bar (navbar) and <head>
+description: Website for the Digital Data Embedding Laboratory    # Site description in <head>
+author: Digital Data Embedding Laboratory                         # Used for copyright statement in footer
+# url: "https://ddelab.github.io"       # No slash at the end
+# baseurl: "/"                          # Only required if your site is on a subdomain e.g. https://username.github.io/sitename
                                         # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
                                         # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/about/#links
 
