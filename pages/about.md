@@ -5,189 +5,251 @@ background: https://images.unsplash.com/photo-1486825586573-7131f7991bdd?auto=fo
 permalink: /about/
 ---
 
-See [`pages/about.md`](https://raw.githubusercontent.com/peterdesmet/petridish/master/pages/about.md) for the raw Markdown of this page.
-
-## Headings
-
-# Heading h1
-
-h1 headings are reserved for page titles and are hidden from content. Start your headings at h2.
-
-## Heading h2
-### Heading h3
-#### Heading h4
-##### Heading h5
-###### Heading h6
-###### Heading with custom id {#custom_id}
-
-{: .alert .alert-info }
-It's best to start page/post headings at h2, since the page/post title will already be an h1.
-
-## Paragraphs
-
-Set i won't void spirit all. Had after called us It wherein Tree in deep abundantly also midst Seed. Beast. Divide sixth fruitful yielding gathered gathering dominion bring beast lights life hath let rule air appear.
-
-Bring let rule creature. Very open hath to years. In second kind. Divide land night. Earth bearing tree lesser likeness likeness won't. Likeness creature light.
-
-## Line breaks
-
-This is the first line.  
-And this is the second line.
-
-## Emphasis
-
-This is **bold text**
-
-This is _italicized text_
-
-This is **_bold italicized text_**
-
-This is ~~strikethrough text~~
-
-## Blockquotes
-
-> Gathering brought him green. Creeping very after hath a, from likeness dry tree moved dry fowl. Our let forth, male dry won't god. Kind a thing, dominion lights midst him gathering waters fruitful greater god have dry land deep abundantly.
-
-## Lists
-
-Unordered list:
-
-- Item 1
-- Item 2
-- Item 3
-  - Subitem 1
-  - Subitem 2
-
-Ordered list:
-
-1. Item 1
-2. Item 2
-3. Item 3
-    1. Subitem 1
-    2. Subitem 2
-
-Task list:
-
-- [x] Item 1
-- [ ] Item 2
-- [ ] Item 3
-
-Definition list:
-
-term 1
-: definition 1.1
-: definition 1.2
-
-term 2
-: definition 2
-
-## Code
-
-Inline `code`
-
-Indented code:
-
-    # Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-Fenced code with syntax highlighting:
-
-```js
-const greet = (text) => "Hello " + text;
-
-// Test
-console.log(greet("world"));
-```
-
-## Horizontal rules
-
----
-
-## Links
-
-[link with url](http://www.example.com)
-
-[link with title](http://www.example.com "title text")
-
-[1]: http://www.example.com
-
-[link with reference][1]
-
-url: <http://www.example.com>
-
-See the [Jekyll documentation](https://jekyllrb.com/docs/liquid/tags/#link) to create internal links. All internal links start from the `url` in `_config.yml`.
-
-The safest (and verbose) way for internal links is:
-
-- For pages: {% raw %}`[link text]({{ site.baseurl }}{% link pages/about.md %})`{% endraw %}
-- For posts: {% raw %}`[link text]({{ site.baseurl }}{% link _posts/2010-07-21-name-of-post.md %})`{% endraw %} or the shorter {% raw %}`[link text]({{ site.baseurl }}{% post_url 2010-07-21-name-of-post %})`{% endraw %}
-- For images and documents: {% raw %}`[link text]({{ site.baseurl }}{% link /assets/images/name-of-image.jpg %})`{% endraw %}
-
-If you don't have a `baseurl` in `_config.yml`, don't plan to change permalinks (it's better not to anyway) and don't want page build failures when a link is broken, you can get away using the (perma)links the pages, images and documents will have on your website:
-
-- For pages: `[link text](/about/)`
-- For posts: {% raw %}`[link text]({% post_url 2010-07-21-name-of-post %})`{% endraw %}
-- For images and documents: `[link text](/assets/images/name-of-image.jpg)`
-
-## Tables
-
-Header 1 | Header 2
---- | ---
-Row 1 col 1 | Row 1 col 2
-Row 2 col 1 | Row 2 col 2
-
-Aligned columns:
-
-Right aligned | Center aligned
----: | :---:
-Row 1 col 1 | Row 1 col 2
-Row 2 col 1 | Row 2 col 2
-
-## Footnotes
-
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-## Images
-
-![alt text](https://images.unsplash.com/photo-1486825586573-7131f7991bdd?w=1000&h=200&fit=crop)
-_You can add an image caption by including an `_emphasized sentence_` directly below the image without inserting a new line. This will wrap both image and caption in a paragraph._
-
-See the [the links section](#links) to learn how to reference your own images and documents.
-
-## Styling content
-
-With the Kramdown Markdown parser that Jekyll uses, you can add css classes to your content (see this [blog post](https://digitaldrummerj.me/styling-jekyll-markdown/)). By sticking to [Bootstrap](https://getbootstrap.com/docs/4.3/) classes, you can easily style your content. If that doesn't fit your needs, you can always write html in your Markdown.
-
-### Alerts
-
-[Bootstrap documentation](https://getbootstrap.com/docs/4.3/components/alerts/)
-
-{: .alert .alert-info}
-Alert info message. This paragraph is styled by prepending it with `{: .alert .alert-info}`.
-
-### Aligning images
-
-[Bootstrap documentation](https://getbootstrap.com/docs/4.3/content/images/#aligning-images)
-
-By default, images will be centered horizontally and use the full width if they can.
-
-The image below is wrapped in a paragraph with `{: .col-md-8 .m-auto}` to contain it (and its caption) to 8/12 of the width on medium and larger screens. On small screens the full width will be used. Controlling the width of an image is especially useful for portrait images.
-
-{: .col-md-8 .m-auto}
-![alt text](https://images.unsplash.com/photo-1486825586573-7131f7991bdd?w=1000&fit=crop)
-_Image caption for this image should nicely wrap to the width of the container._
-
-The image below is styled with `{: .rounded .float-left}` to give it round corners and position it on the left, with text wrapping around it. You can use `{: .clearfix}` on a paragraph to stop wrapping.
-
-![alt text](https://images.unsplash.com/photo-1486825586573-7131f7991bdd?w=150&h=150&fit=crop){: .rounded .float-left}
-
-Tree man. Gathering unto give gathered. Midst they're. After image appear. Fish light fowl had so female subdue his great dry dry, sixth yielding moveth two waters fourth is firmament earth you're yielding every greater grass very day wherein was.
-
-Itself meat. Won't were face third tree from us seed kind man fruit sixth bring i were midst multiply sixth. Cattle let, creeping fruit good whales very. There void So their you living. Appear two cattle kind man air rule signs.
-
-{: .clearfix}
-Life brought good appear good grass air abundantly a. Life. Rule be brought unto. Fly days fruit evening. Us.
+## Contact
+
+Digital Data Embedding Laboratory
+<a href="http://www.ee.binghamton.edu">Department of Electrical and Computer Engineering</a>
+<a href="http://www.binghamton.edu">SUNY Binghamton</a>, Binghamton, NY 13902-6000
+Ph: (607)-777-5689
+Fx: (607)-777-4464
+
+## Mission
+
+The Digital Data Embedding Laboratory provides research facilities to its members to perform specialized research in steganography and steganalysis of digital images, digital image watermarking, watermarking for authentication and tamper detection, forensic analysis of digital images (detection of forgeries), and
+advanced image processing and encryption techniques. Members of the Laboratory include <a href="http://watson.binghamton.edu">Watson School</a> faculty members, postdotoral
+research scientists, and graduate students at Binghamton University who focus mostly on <a href="http://www.ws.binghamton.edu/fridrich/projects.html">military projects</a>
+supported by the <a href="http://www.rl.af.mil">US Air Force</a>.
+
+## Funding
+
+<table width="100%">
+  <tr>
+    </td>
+    <td style="padding-top: 15pt;">
+    <a href="http://afosr.sciencewise.com/"><img src="data/afosr.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Rich Cover Models for Steganalysis of Digital Media</b><br/>
+      sponsored by the Air Force Office of Scientific Research, April 1, 2012 – March 31, 2017.
+    </td>
+  </tr>
+  <tr>
+    </td>
+    <td style="padding-top: 15pt;">
+    <A HREF="http://www.nsf.gov/"><IMG SRC="data/NSF_Logo.jpg" WIDTH=100 BORDER=0></A>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Digital Image Forensics Using Systematic Artifacts of Imaging Sensors</b><br/>
+      sponsored by NSF, September 1, 2008 - August 31, 2010.
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-top: 15pt;">
+    <a href="http://afosr.sciencewise.com/"><img src="data/afosr.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Advanced Steganalysis Methods for Digital Images</b><br/>
+      sponsored by the Air Force Office of Scientific Research, January 1, 2009 - December 31, 2011.
+    </td>
+  </tr>
+  <tr>
+    
+    </td>
+    <td style="padding-top: 15pt;">
+    <a href="http://afosr.sciencewise.com/"><img src="data/afosr.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Towards Statistically Undetectable Steganography</b><br/>
+      sponsored by the Air Force Office of Scientific Research, January 1, 2008 - December 31, 2010.
+    </td>
+  </tr>
+  <tr>
+    </td>
+    <td style="padding-top: 15pt;">
+    <a href="http://afosr.sciencewise.com/"><img src="data/afosr.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Advanced Steganographic and Digital Forensic Methods</b><br/>
+      sponsored by the Air Force Office of Scientific Research, January 15, 2006 - December 31, 2008.
+    </td>
+  </tr>
+
+  <tr>
+      </td>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.rl.af.mil/"><img src="data/AFRL1.gif" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Mathematical Foundations of Steganalysis, research grant # FA8750-04-1-0112</b><br/>
+      funded by the Air Force Research Laboratory in Rome, March 26, 2004 - September 30, 2006.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.rl.af.mil/"><img src="data/AFRL1.gif" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>New Generation Methods for Digital Security: Steganography, Steganalysis, and Authentication Watermarks</b><br/>
+      funded by the Air Force Research Laboratory in Rome, May 13, 2002 - September 23, 2005.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.rl.af.mil/"><img src="data/AFRL1.gif" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b> New Generation Methods for Digital Security: Steganography, Steganalysis, and Authentication Watermarks</b><br/>
+      funded by the Air Force Research Laboratory in Rome, May 13, 2002 - September 30, 2003.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.rl.af.mil/"><img src="data/AFRL1.gif" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Smart Digital Images - Embedding for Information, Protection, and Self-Repair</b><br/>
+      funded by the Air Force Research Laboratory in Rome, March 26, 2000 - September 30, 2002.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.rl.af.mil/"><img src="data/AFRL1.gif" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Secure Oblivious Hiding, Authentication, Tamper Proofing, and Verification Techniques</b><br/>
+      research grant # F30602-00-1-0502 sponsored by the Air Force Research Laboratory, Rome, NY. October 5, 1999 - October 4, 2000.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://afosr.sciencewise.com/"><img src="data/afosr.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Lossless Data Embedding and Crypto-Transformations for Steganography</b><br/>
+      sponsored by the Air Force Office of Scientific Research, December 15, 2000 - December 14, 2003.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.rl.af.mil/"><img src="data/AFRL1.gif" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Steganalysis of Digital Watermarking Techniques</b><br/>
+      research grant with Polytechnic University, NY sponsored by the Air Force Research Laboratory, Rome, NY. March 2001 – September 2002, 2000.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.rl.af.mil/"><img src="data/mtl.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Automated Multi-Level Security Digital Information Transfer Using Watermarking Technologies</b><br/>
+      MTL Phase I and II SBIR funded by the Air Force Research Laboratory in Rome, April 2000 - February 2003.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.mrcsb.com"><img src="data/mrc.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Development of Novel Steganography Detection Capabilities for Digital Images</b><br/>
+      Phase I of NSF SBIR with Mission Research Corporation, Albuquerque, NM. January 1, 2001 - June 30, 2001.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.mrcsb.com"><img src="data/mrc.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Secure Image Management Using Watermarking</b><br/>
+      Phase I of Army SBIR with Mission Research Corporation, Albuquerque, NM. December 15, 2000 - June 15, 2001.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.rl.af.mil/"><img src="data/AFRL1.gif" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Techniques for Secure Image Processing</b><br/>
+      Research grant # F30602-98-C-0009 sponsored by the Air Force Research Laboratory, Rome, NY. January 6, 1998 - May 31, 2000.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.mrcsb.com"><img src="data/mrc.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Innovative C4I Technologies (Secure Image Encryption and Hiding)</b><br/>
+      Phase I of SBIR topic No. AF97-043 with Mission Research Corporation, Albuquerque, NM. May 14, 1997 - February 28, 1998.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.mrcsb.com"><img src="data/mrc.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Innovative C4I Technologies (Secure Image Encryption and Hiding)</b><br/>
+      Phase II of SBIR topic No. AF97-043 with Mission Research Corporation, Albuquerque, NM. March 17, 1998 - March 16, 2000.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.kodak.com"><img src="data/kodak.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Robust Image Authentication and Discovery (RIAD)</b><br/>
+      subcontractor for contract # F30602-99-2-0541 with Eastman Kodak, August 18, 1999 - May 2001.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www1.umn.edu/twincities/"><img src="data/minn.jpg" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Data Embedding in Imagery and Its Applications</b><br/>
+      Contractor for the grant # F30602-98-C-0176 funded by the Air Force Research Laboratory, Rome NY to University of Minnesota. June 3, 1998 - September 1, 2001.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 15pt;">
+      <a href="http://www.rl.af.mil/"><img src="data/AFRL1.gif" width="100" border="0"></a>
+    </td>
+    <td style="padding-top: 15pt;">
+      <b>Secure Image Ciphering Based on Chaos</b><br/>
+      Research grant # F30602-96-1-0047 sponsored by the Air Force Research Laboratory, Rome NY, January 1, 1996 - September 30, 1996.
+    </td>
+  </tr>
+</table>
+
+## Copyright
+
+All information, and documents, provided on this Website were provided by or to The DDE website by their respective author(s) and are the copyrighted work of The DDE website and/or the respective author(s) and may not be distributed or republished in any form or by any means, including, but not limited to, electronic, mechanical, photocopying, recording, or otherwise, without the prior express written permission of The DDE Website, or the respective author(s).
+
+No part of the Website, including logos, graphics, or images, may reproduced or retransmitted in any way, or by any means, without the prior express written permission of The DDE website. You also may not, without the prior express written permission from The DDE website, "mirror" any Material contained on this Website on any other server.
+
+Permission is granted to display and download The DDE website's Collection of Publications by DDE Members on this Website provided that: (1) the use of such Materials is solely for personal, non-commercial and informational use and will not be copied or posted on any networked computer or broadcast in any media, and (3) no modifications of any of the Materials are made.
+
+Any unauthorized use of any Materials contained on this Website may violate copyright laws, trademark laws, the laws of privacy and publicity, and communications regulations and statutes.
+
+
+<a href="http://www.binghamton.edu"> 
+  <img style="padding: 0pt 5pt 2pt 0pt; border: 0;" src="data/bulogo.gif" alt="Binghamton University"/>
+</a>
+<a href="http://www.rl.af.mil">
+  <img width="85pt" style="padding: 0pt 5pt 2pt 0pt; border: 0;" src="data/AFRL1.gif" alt="AFRL"/>
+</a>
