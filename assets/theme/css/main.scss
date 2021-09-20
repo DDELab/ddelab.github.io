@@ -55,5 +55,5 @@ $custom_rounded: "{{ site.rounded_corners }}";
   @import "_jumbotron";         // Jumbotron
   @import "_content";           // Content
   @import "_card";              // Blog post card
-  @import "_team";              // Team members
+  @import "_member";            // Team member blocks
 @import "_footer";              // Footer

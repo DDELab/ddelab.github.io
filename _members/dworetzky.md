@@ -1,5 +1,6 @@
 ---
 layout: member
+category: Current Members
 firstname: Eli
 lastname: Dworetzky
 role: Research assistant # Will appear next to name

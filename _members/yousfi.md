@@ -1,5 +1,6 @@
 ---
 layout: member
+category: Current Members
 firstname: Yassine
 lastname: Yousfi
 role: PhD candidate # Will appear next to name

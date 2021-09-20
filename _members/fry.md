@@ -1,5 +1,6 @@
 ---
 layout: member
+category: Former Affiliates
 firstname: Philip
 lastname: Fry
 role: Delivery boy # Will appear next to name
