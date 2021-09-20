@@ -1,6 +1,7 @@
 ---
 layout: member
-name: Philip J. Fry
+firstname: Philip
+lastname: Fry
 role: Delivery boy # Will appear next to name
 image: assets/img/fry_ethan-hoover-311143-unsplash.jpg # Can be external link
 description: my description

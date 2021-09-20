@@ -1,6 +1,7 @@
 ---
 layout: member
-name: Eli Dworetzky
+firstname: Eli
+lastname: Dworetzky
 role: Research assistant # Will appear next to name
 image: assets/img/fry_ethan-hoover-311143-unsplash.jpg # Can be external link
 description: An M.S. student.

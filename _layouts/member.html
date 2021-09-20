@@ -4,3 +4,7 @@ description: Template for individual member pages, with contained width
 ---
 
 {{ content }}
+
+<h3>Publications</h3>
+
+{% bibliography  --query @*[author ^= {{page.lastname}} ] %}
