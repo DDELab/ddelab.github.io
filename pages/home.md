@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Digital Data Embedding Laboratory
-description: Towards developing a theme for research project websites
+description: Homepage
 background: /assets/img/chuttersnap-146799-unsplash.jpg
 permalink: /
 ---
@@ -9,8 +9,8 @@ permalink: /
 {: .alert .alert-info}
 This is currently NOT the official DDE website. Please visit [dde.binghamton.edu](https://dde.binghamton.edu).
 
-Forth. I said, creeping fowl. Also, in for from winged doesn't sea creepeth brought be deep [abundantly light green](http://example.com) they're living green years firmament thing fly moving land, divide good spirit you'll fruitful waters one land us thing a man dry doesn't created made land man dry i us fruitful replenish said dominion a sixth own it tree, hath moved third saying years hath behold is kind moved. Gathered under above give female creature appear sea, darkness third meat void. Set spirit us of deep fourth. One unto made is. Dominion shall very. Above.
+The Digital Data Embedding Laboratory provides research facilities to its members to perform specialized research in steganography and steganalysis of digital images, digital image watermarking, watermarking for authentication and tamper detection, forensic analysis of digital images (detection of forgeries), and advanced image processing and encryption techniques. Members of the Laboratory include <a href="http://watson.binghamton.edu">Watson School</a> faculty members, postdotoral research scientists, and graduate students at Binghamton University who focus mostly on <a href="http://www.ws.binghamton.edu/fridrich/projects.html">military projects</a> supported by the <a href="http://www.rl.af.mil">US Air Force</a>.
 
-He land lights. Give and lights upon subdue life. Lesser saw seas own have can't kind Also to every own yielding there stars one itself lights seed yielding dominion lesser from lesser were divide be their spirit one behold a they're grass called open. Let bearing god. Their shall from third very beast won't may upon. Fruitful, years appear given a. For to and multiply given is greater together days god. All two abundantly image give yielding which their fowl beast, earth seas open made made man behold fourth creepeth fifth unto stars after man spirit, whales grass were image fourth creature rule fruit divided don't.
-
-
+<a href="http://www.binghamton.edu"> 
+  <img style="padding: 0pt 5pt 2pt 0pt; border: 0;" width="40%" src="/assets/img/BU_logo.png" alt="Binghamton University"/>
+</a>

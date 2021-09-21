@@ -8,15 +8,15 @@ author: Digital Data Embedding Laboratory                         # Used for cop
                                         # A baseurl affects internal links, see http://peterdesmet.github.io/petridish/about/#links
 
 # SOCIAL PROFILES
-email: your.email@example.com           # Social icon in footer
-twitter_username: peterdesmet           # Social icon in footer
-github_username: peterdesmet            # Social icon in footer
+email: fridrich@binghamton.edu           # Social icon in footer
+#twitter_username: peterdesmet           # Social icon in footer
+github_username: DDELab            # Social icon in footer
 
 # THEME SETTINGS (ALL OPTIONAL)
 posts_on_home: 3                        # Show x number of latest posts on homepage, can be 0
-tweets_on_home: true                    # Show Twitter feed of twitter_username on homepage
+tweets_on_home: false                    # Show Twitter feed of twitter_username on homepage
 archive_permalink: /blog/               # Permalink of page using archive.html layout, required when using post categories
-logo: /assets/img/petri-dish_1f9eb.png  # Logo in navbar, will be displayed with 30px height
+logo: /assets/img/magnifying-glass-tilted-right_1f50e.png  # Logo in navbar, will be displayed with 30px height
 colors:
   links: "#007bff"                      # Color for links: use a readable color that contrasts well with dark text
   banner: "#007bff"                     # Background color for page banners: use color that contrasts well with white
@@ -76,7 +76,7 @@ scholar:
   locale: en
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: stegobooks.bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
