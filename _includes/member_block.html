@@ -3,7 +3,7 @@
     <!-- <img class="mr-3" src="{{ member.image | relative_url }}"> -->
     <div class="media-body">
       <h5 id="{{ member.lastname | strip | url_encode }}">
-        <a href="/members/{{member.title}}">
+        <a href="{{member.url}}">
           {{ member.firstname }} {{ member.lastname }}
         </a>
         {% if member.role %}
