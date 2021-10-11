@@ -37,6 +37,13 @@
           <a href="https://github.com/{{ member.github }}"><i class="fa fa-github"></i></a>
         </li>
         {% endif %}
+
+        {% if member.google_scholar %}
+        <li class="list-inline-item">
+          <a href="https://scholar.google.com/{{ member.google_scholar }}"><i class="ai ai-google-scholar"></i></a>
+        </li>
+        {% endif %}
+
       </ul>
     </div>
   </div>
